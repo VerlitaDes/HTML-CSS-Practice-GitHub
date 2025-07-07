@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 8: Forms and Inputs</title>
+</head>
+<body>
+
+<form action="/submit" method="post">
+  <!-- The form sends data to the /submit URL using the POST method -->
+  <label for="first name" style="color: #1F8716; font-family: Helvetica;">First name:</label>
+  <!-- Label for the name input field -->
+  <input type="text" id="first name" name="username" for="first name" placeholder="Enter your first name" required>
+  <!-- Text input for user's name (required field), data will be sent with the name "username" -->
+
+    <label for="second name" style="color: #1F8716; font-family: Helvetica;">Second name:</label>
+  <!-- Label for the name input field -->
+  <input type="text" id="second name" name="username" for="second name" placeholder="Enter your second name" required>
+  <!-- Text input for user's name (required field), data will be sent with the name "username" -->
+
+  <label for="email" style="color: #1F8716; font-family: Helvetica;">Email:</label>
+  <!-- Label for the email input field -->
+  <input type="email" id="email" name="useremail" placeholder="Enter your Email" required>
+  <!-- Email input for user's email address (required field), data will be sent with the name "useremail" -->
+  <button type="submit" style="background-color: #1F8716; color: white; padding: 10px 10px; border: none; border-radius: 0px; cursor: pointer; font-family: Helvetica;">Send</button>
+  <!-- Submit button that sends the form data -->
+
+<br><br>
+
+    <textarea name="comments" rows="8" cols="63" placeholder="Your comments..."></textarea>
+
+<br><br>
+
+  <input type="password" name="password" placeholder="Password">
+
+    <br><br>
+
+  <input type="checkbox" id="subscribe" name="subscribe" checked>
+  <label for="subscribe" style="color: #1F8716; font-family: Helvetica;">Subscribe to newsletter</label>
+
+      <br><br>
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male" style="color: navy; font-family: Helvetica;">Male</label>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female" style="color: red; font-family: Helvetica;">Female</label>
+
+          <br><br>
+
+  <select name="country">
+    <option value="BE">Belgium</option>
+    <option value="NL">Netherlands</option>
+       <option value="JP">Japan</option>
+    <option value="UA">Ukraine</option>
+  </select>
+
+</body>
+</html>
