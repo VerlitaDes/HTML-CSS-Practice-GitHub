@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 10: SEO and Accessibility Basics</title>
+    <style>
+        :root {
+            --main-bg-color: #66001f;
+            --text-color-light: #fefcef;
+            --form-bg-color: #fefcef;
+            --form-text-color: #66001f;
+            --section-bg-light: #fefcef;
+            --section-text-dark: #66001f;
+            --font-main: 'Cinzel', serif;
+        }
+
+        /* Set global styles */
+        body {
+            background-color: var(--main-bg-color);
+            font-family: var(--font-main);
+            color: var(--text-color-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        .header h1 {
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Section base styling */
+        .main-section {
+            padding: 20px;
+        }
+
+        /* Light background and dark text for intro section */
+        .main-section.intro-section {
+            background-color: var(--section-bg-light);
+            color: var(--section-text-dark);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        /* Styling for the form section */
+        .form-section {
+            background-color: var(--form-bg-color);
+            color: var(--form-text-color);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Label and input field styling */
+        .form-label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: var(--font-main);
+        }
+
+        /* Fieldset styling */
+        .form-fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0px;
+        }
+
+        /* Submit button styling */
+        .submit-button {
+            background-color: var(--main-bg-color);
+            color: var(--text-color-light);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: var(--font-main);
+            font-size: 20px;
+            border-radius: 0px;
+        }
+
+        .submit-button:hover {
+            background-color: black;
+        }
+
+        /* Navigation block styling */
+        .nav {
+            text-align: center; /* Center the entire nav */
+            padding: 20px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav a {
+            color: var(--text-color-light);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header of the page -->
+<header role="banner" class="header">
+    <h1>The path to success</h1>
+</header>
+
+<!-- Main content area -->
+<main role="main">
+
+    <!-- First section with motivational images and text -->
+    <section class="main-section intro-section">
+        <h2>Is it worth to risk?</h2>
+        <img src="messy%20middle.jpg" alt="Inspirational quote: 'The middle of the process is always messy'">
+        <br><br>
+        <img src="take%20the%20risk.png" alt="Motivational message: 'Take the risk' written in bold text">
+    </section>
+
+    <!-- Feedback form section -->
+    <section class="main-section form-section">
+        <h3>Feedback Form</h3>
+
+        <!-- The form sends data to /submit using POST -->
+        <form action="/submit" method="post" class="form">
+
+            <!-- User information fieldset -->
+            <fieldset class="form-fieldset">
+                <legend>Your Information</legend>
+
+                <!-- Name input -->
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required class="form-input">
+
+                <!-- Email input -->
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="useremail" placeholder="Enter your email" required class="form-input">
+            </fieldset>
+
+            <!-- Preferences fieldset -->
+            <fieldset class="form-fieldset">
+                <legend>Preferences</legend>
+
+                <!-- Newsletter checkbox -->
+                <label for="newsletter" class="form-label">Subscribe to newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </fieldset>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </section>
+</main>
+
+<!-- Navigation area with 'Back to top' link -->
+<nav role="navigation" class="nav">
+    <ul>
+        <li><a href="#top">Back to top</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

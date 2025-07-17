@@ -1,0 +1,168 @@
+/* === 1. Загальні стилі для тіла сторінки === */
+/* Відповідає <body> (рядок 7) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Основний шрифт тексту на сторінці */
+  margin: 0; /* Прибирає зовнішній відступ браузера */
+  padding: 0 16px; /* Внутрішній відступ по боках */
+  line-height: 25px; /* Висота рядка для покращення читабельності */
+  font-size: 20px;
+ height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #262626 0%,
+    #666666 50%,
+    #262626 100%
+  );
+}
+
+/* === 2. Заголовок сторінки (h1) === */
+/* Відповідає <h1> (рядок 9) */
+h1 {
+  text-align: center; /* Центрування заголовка */
+  font-size: 60px; /* Розмір шрифту заголовка */
+  margin-top: 60px; /* Відступ зверху */
+  margin-bottom: 30px; /* Відступ знизу */
+}
+
+/* === 3. Стиль літери в h1 та h2 — клас "kapakana" === */
+/* Відповідає <span class="kapakana"> (рядки 12, 19, 26 тощо) */
+.kapakana {
+  font-family: 'Kapakana', fantasy, serif; /* Декоративний/нестандартний шрифт для виділення літери */
+  font-weight: bold; /* Жирний стиль */
+  font-size: 50px; /* Великий розмір для акценту */
+  color: #FFF28C;
+}
+
+/* === 4. Текстовий стиль поруч із декоративною літерою — клас "helvetica" === */
+/* Відповідає <span class="helvetica"> (рядки 12, 19, 26 тощо) */
+.helvetica {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700; /* або 'bold' */
+  color: #1A1A1A;
+}
+
+
+/* === 5. Основний контейнер вмісту — <main> === */
+/* Відповідає <main> (рядок 11) */
+main {
+  max-width: 960px; /* Максимальна ширина блоку */
+  margin: 0 auto; /* Центрування сторінки */
+  padding-bottom: 60px; /* Відступ знизу */
+}
+
+/* === 6. Стилі секцій (розділів статті) === */
+/* Відповідає <section> (рядок 13) */
+section {
+  margin-bottom: 60px; /* Відступ між секціями */
+}
+
+/* === 7. Заголовки другого рівня (розділи) — <h2> === */
+/* Відповідає <h2> (рядки 12, 19, 26 і т.д.) */
+h2 {
+  font-size: 30px; /* Розмір шрифту для підзаголовка */
+  margin-top: 60px; /* Відступ зверху */
+  margin-bottom: 20px; /* Відступ знизу */
+  color: #E2FC2B;
+}
+
+/* === 8. Абзаци тексту — <p> === */
+/* Відповідає всім <p> (починаючи з рядка 10 і далі) */
+p {
+  margin-bottom: 20px; /* Відступ знизу після кожного абзацу */
+  font-size: 20px; /* Розмір основного тексту */
+  color: #D9D9D9;
+}
+
+/* === 9. Списки принципів дизайну — <ul> і <li> === */
+/* Відповідає списку в секції II (рядок 24) */
+ul {
+  padding-left: 30px; /* Відступ зліва для списку */
+  margin-bottom: 20px; /* Відступ знизу списку */
+  color: #E2FC2B;
+}
+
+li {
+  margin-bottom: 20px; /* Відступ між пунктами */
+  color: #D9D9D9;
+}
+
+li {
+  list-style: none; /* прибрати стандартний булет */
+  position: relative;
+  padding-left: 60px; /* зсув для псевдо-булета */
+}
+
+li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: #E2FC2B; /* колір булета */
+  font-size: 20px;
+  line-height: 1;
+  color: #FFF28C;
+}
+
+
+/* === 10. Зображення логотипів — <img> === */
+/* Відповідає всім <img> (рядки 45, 53, 61 і далі) */
+img {
+  display: inline-block; /* Виводить зображення в ряд */
+  margin: 2px; /* Мінімальні відступи навколо */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тінь для підняття зображення над фоном */
+  object-fit: cover; /* Забезпечує обрізання без спотворення */
+  width: 200px; /* Фіксована ширина */
+  height: 200px; /* Фіксована висота */
+}
+
+/* === 11. Заголовки прикладів логотипів — <h4> === */
+/* Відповідає <h4> (рядки 41, 51, 61 тощо) */
+h4 {
+  font-size: 20px; /* Розмір заголовка прикладу */
+  margin-top: 30px; /* Відступ зверху */
+  margin-bottom: 30px; /* Відступ знизу */
+  color: #1A1A1A;
+}
+
+/* === 12. Стилі для <article> === */
+/* Відповідає <article> (рядок 88) */
+article {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* === 13. Посилання на PDF (рядок 78) === */
+a {
+  color: #FFF28C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === 14. Глобальний футер === */
+/* Відповідає <footer> (в кінці сторінки) */
+footer {
+  background-color: #1A1A1A; /* Темний фон, схожий на фон сайту */
+  padding: 30px 20px; /* Внутрішній відступ */
+  color: #D9D9D9; /* Світлий текст */
+  font-size: 20px;
+  text-align: center;
+}
+
+/* === 15. Контейнер футера === */
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* === 16. Посилання у футері === */
+footer a {
+  color: #FFF28C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FFF28C;
+}
