@@ -1,0 +1,27 @@
+.card {
+  width: 300px;              /* Width of the card */
+  height: 150px;             /* Height of the card (no space between 150 and px) */
+  padding: 20px;             /* Space inside the card */
+  border: 2px solid black;   /* 2px border with black color */
+  margin: 40px;              /* Space outside the card */
+  background: linear-gradient(
+    90deg,
+    #262626 0%,
+    #666666 50%,
+    #262626 100%
+  );
+  color: black;
+}
+
+.border-box {
+  box-sizing: border-box;    /* Includes padding and border within total width/height.*/
+}
+/*“Padding та border враховані всередині загальної ширини та висоти, а не додаються до них зверху”. 300px*/
+
+.content-box {
+  box-sizing: content-box; /* Padding and border are added outside the content width */
+}
+/*width: 300px;
+padding: 20px;
+border: 2px solid;
+Виходить: Фактична ширина елемента = 300 (content) + 20*2 (padding) + 2*2 (border) = 344px*/
