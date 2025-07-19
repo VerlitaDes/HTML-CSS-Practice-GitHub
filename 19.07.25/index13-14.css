@@ -1,0 +1,125 @@
+body {
+  font-family: 'Arsenal SC', sans-serif;
+}
+
+.fixed-menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #151922; /*cool black*/
+}
+
+.fixed-menu-bar h1 {
+  font-family: 'Arsenal SC', sans-serif;
+  font-size: 40px;
+  font-style: bold;
+  margin: 0;
+  letter-spacing: 0px;
+  color: #FFDE83; /*yellow*/
+}
+
+h2 {
+  font-family: 'Tangerine', sans-serif;
+  font-size: 40px;
+  font-style: bold;
+  margin: 0;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.item1,
+.item2,
+.item3 {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item1 {
+  background-color: #151922;
+}
+
+.item2 {
+  background-color: #FFDE83;
+}
+
+.item3 {
+  background-color: #151922;
+}
+
+.p-item1,
+.p-item2,
+.p-item3 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.p-item1,
+.p-item3 {
+  color: #FFDE83;
+  font-family: 'Tangerine', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.p-item2 {
+  color: #151922;
+  font-family: 'Arsenal SC', sans-serif;
+}
+
+.relative-container {
+  position: relative;
+  width: 505px;
+  height: 300px;
+  background-color: #151922;
+  border: 10px solid #ffde83;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  width: 200px;
+  height: 100px;
+  background-color: #151922;
+  color: #ffde83;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.tangerine {
+  margin-top: 115px;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+  color: white;
+  display: block;
+}
+
+.arsenal {
+  text-align: center;
+  font-family: 'Arsenal SC', sans-serif;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+
+

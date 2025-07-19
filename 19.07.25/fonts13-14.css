@@ -1,0 +1,39 @@
+/*Arsenal SC Font Beginning*/
+.arsenal-sc-regular {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.arsenal-sc-bold {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.arsenal-sc-regular-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.arsenal-sc-bold-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+/*Arsenal SC Font Ending*/
+
+/*Tangerine Font Beginning*/
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+/*Tangerine Font Ending*/
